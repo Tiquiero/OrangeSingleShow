@@ -1,0 +1,14 @@
+{
+  "pages": [
+    
+  ],
+  "window": {
+    "backgroundColor": "#ffa500",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffa500",
+    "navigationBarTitleText": "橙独秀",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}
