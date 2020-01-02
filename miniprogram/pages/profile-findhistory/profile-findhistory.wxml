@@ -1,0 +1,18 @@
+<view>
+  <block wx:for="{{findList}}" wx:key="_id">
+    <view class="find-panel">
+      <x-find-card 
+      find="{{item}}" 
+      bind:tap="goComment"
+      data-findid="{{item._id}}" />
+
+      <x-find-ctrl 
+      findId="{{item._id}}" 
+      find="{{item}}" 
+      iconfont="iconfont" 
+      icon-pinglun="icon-pinglun" 
+      icon-fenxiang="icon-fenxiang" />
+
+    </view>
+  </block>
+</view>

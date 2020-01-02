@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "x-find-card": "/components/find-card/find-card",
+    "x-find-ctrl": "/components/find-ctrl/find-ctrl"
+  },
+  "navigationBarTitleText": "正文"
+}

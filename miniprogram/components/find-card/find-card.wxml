@@ -1,0 +1,15 @@
+<view class="find">
+  <view class="find-title">
+    <image class="find-portrait" src="{{find.avatarUrl}}"></image>
+    <view class="find-box">
+      <view class="find-nickName">{{find.nickName}}</view>
+      <view class="find-time">{{_createTime}}</view>
+    </view>
+  </view>
+  <view class="find-content">{{find.content}}</view>
+  <view class="find-img">
+    <block wx:for="{{find.img}}" wx:key="index">
+      <image class="img" src="{{item}}" mode="aspectFill" catch:tap="onPreviewImage" data-imgsrc="{{item}}" data-imgs="{{find.img}}"></image>
+    </block>
+  </view>
+</view>

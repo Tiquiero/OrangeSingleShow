@@ -1,14 +1,42 @@
 {
   "pages": [
-    
+    "pages/find/find",
+    "pages/home/home",
+    "pages/profile/profile",
+    "pages/find-detail/find-detail",
+    "pages/profile-findhistory/profile-findhistory"
   ],
   "window": {
     "backgroundColor": "#ffa500",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#ffa500",
-    "navigationBarTitleText": "橙独秀",
+    "navigationBarTitleText": "橙独秀诶",
     "navigationBarTextStyle": "white"
   },
   "sitemapLocation": "sitemap.json",
-  "style": "v2"
+  "style": "v2",
+  "tabBar": {
+    "color": "#474747",
+    "selectedColor": "#ffa500",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home_active.png"
+      },
+      {
+        "pagePath": "pages/find/find",
+        "text": "发现",
+        "iconPath": "images/find.png",
+        "selectedIconPath": "images/find_active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my_active.png"
+      }
+    ]
+  }
 }

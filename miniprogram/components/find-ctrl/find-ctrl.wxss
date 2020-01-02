@@ -1,0 +1,68 @@
+.ctrl {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  height: 100%;
+}
+
+.ctrl-item {
+  flex: 1;
+  text-align: center;
+  color: rgba(40, 47, 60, 0.8);
+  font-size: 26rpx;
+  height: 60rpx; 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.ctrl-item .icon {
+  margin-right: 12rpx;
+  font-size: 32rpx;
+}
+
+.ctrl-item text {
+  font-size: 32rpx;
+}
+
+.comment-content {
+  width: 560rpx;
+  text-align: left;
+  padding: 20rpx;
+  font-size: 32rpx;
+}
+
+.send {
+  background: #ffa500;
+  color: #fff;
+  font-size: 30rpx;
+  position: absolute;
+  right: 20rpx;
+  bottom: 20rpx;
+  width: 80px !important;
+  padding: 10px 0 !important;
+  min-height: 0 !important;
+}
+
+.share-btn {
+  height: 60rpx !important;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 0 !important;
+  background-color: #fff !important;
+  padding: 0px 24px !important;
+  font-weight: normal !important;
+  color: rgba(40, 47, 60, 0.8) !important;
+}
+
+.share-btn::after {
+  display: none;
+}
+
+.share-hover::after {
+  border: 0;
+}

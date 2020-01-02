@@ -1,0 +1,6 @@
+<!--components/contentItem.wxml-->
+<view class="playlist-container" bind:tap="goToMusiclist">
+  <image src="{{itemData.url}}" class="playlist-img"></image>
+  <view class="playlist-name">更新时间:</view>
+  <view class="playlist-name">{{_updateTime}}</view>
+</view> 

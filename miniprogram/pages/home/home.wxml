@@ -1,0 +1,13 @@
+<swiper indicator-dots="true" autoplay="true" interval="3000" duration="1000">
+  <block wx:for="{{reolayPicList}}" wx:key="_id">
+    <swiper-item>
+      <image class="img" src="{{item.url}}" mode="widthFix"></image>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="playlist-container">
+  <block wx:for="{{content}}" wx:key="_id">
+    <x-contentItem itemData="{{item}}"></x-contentItem>
+  </block>
+</view>

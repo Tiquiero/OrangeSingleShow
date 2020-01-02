@@ -1,0 +1,28 @@
+<!--pages/find/find.wxml-->
+<view class="container">
+  <!-- 头部 -->
+  <view class="header">
+    <view class="publish-container" bind:tap="onPublish">
+      <i class="iconfont icon-fabu"></i>
+    </view>
+    <view class="search-container">
+      <x-search iconfont="iconfont" icon-sousuo="icon-sousuo" bind:search="onSearch" />
+    </view>
+  </view>
+
+  <!-- 博客卡片列表 -->
+  <view class="find-list">
+    <block wx:for="{{findList}}" wx:key="_id">
+      <view class="find-panel">
+        <x-find-card find="{{item}}" data-findid="{{item._id}}" bind:tap="goComment" />
+        <x-find-ctrl findId="{{item._id}}" find="{{item}}" iconfont="iconfont" icon-pinglun="icon-pinglun" icon-fenxiang="icon-fenxiang" />
+      </view>
+    </block>
+  </view>
+
+
+  <!-- 底部弹出层 -->
+  <x-login modalShow="{{modalShow}}" bind:loginsuccess="onLoginSuccess" bind:loginfail="onLoginFail">
+
+  </x-login>
+</view>
